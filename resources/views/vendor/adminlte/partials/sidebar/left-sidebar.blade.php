@@ -15,7 +15,7 @@
                 @if (config('adminlte.sidebar_nav_animation_speed') != 300) data-animation-speed="{{ config('adminlte.sidebar_nav_animation_speed') }}" @endif
                 @if (!config('adminlte.sidebar_nav_accordion')) data-accordion="false" @endif>
                 <li>
-                    <div class="form-inline my-2">
+                    {{-- <div class="form-inline my-2">
                         <div class="input-group" data-widget="sidebar-search" data-arrow-sign="»">
                             <input class="form-control form-control-sidebar" type="search" placeholder="search"
                                 aria-label="search">
@@ -42,7 +42,7 @@
                                     <div class="search-path"></div>
                                 </a></div>
                         </div>
-                    </div>
+                    </div> --}}
                 </li>
                 @if (Auth::user()->role == 'admin')
                     <ul class="list-group">
@@ -80,7 +80,7 @@
                             </a>
                         </li>
                 @endif
-                
+
             </ul>
         </nav>
     </div>

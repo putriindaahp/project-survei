@@ -72,7 +72,7 @@ class UserController extends Controller
                             $query->orWhere('layanan_id', $l);
                         }
                     })
-                    ->paginate(10);
+                    ->paginate(50);
                 $sessJawaban = Session::get('jawaban');
                 return view('user.jawaban_responden', compact('pertanyaans', 'layanan', Session::has('jawaban') ? 'sessJawaban' : 'tmp'));
             }

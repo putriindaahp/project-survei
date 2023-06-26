@@ -9,7 +9,11 @@ use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
 /* Route User */
-Route::get('/', [UserController::class, 'profileView']);
+Route::get('/', function () {
+    return view('user/beranda');
+});
+//Route::get('/', [UserController::class, 'beranda']);//
+Route::get('/profileView', [UserController::class, 'profileView']);
 Route::post('/profile', [UserController::class, 'profile']);
 Route::get('/layanan', [UserController::class, 'layananView']);
 Route::post('/layanan', [UserController::class, 'layanan']);

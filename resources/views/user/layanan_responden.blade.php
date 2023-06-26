@@ -6,8 +6,7 @@
     @endphp
     <div class="card-body">
         <p class="fw-bold" style="color: #3b4568">PILIH LAYANAN YANG AKAN DI SURVEY</p>
-        <p class="fst-italic" style="font-size: 12px; color: #3b4568"><span class="text-danger">*</span>Anda dapat memilih
-            lebih dari satu layanan</p>
+        <p class="fst-italic" style="font-size: 12px; color: #3b4568"><span class="text-danger">*</span>Anda dapat memilih layanan lebih dari satu</p>
         <div class="card p-2">
             <div class="card-body" style="color: #3b4568">
                 {{-- <p><b>Check Layanan : </b>
@@ -41,7 +40,7 @@
             </div>
         </div>
         <div class="mt-3">
-            <a href="/">
+            <a href="/profileView">
                 <button type="button" class="btn" style="background-color: #001a76; color: white">Kembali</button>
             </a>
             <button type="submit" class="btn float-end"
